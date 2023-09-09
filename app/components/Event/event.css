@@ -1,0 +1,64 @@
+.event_outer_container {
+  background-color: white;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event_inner_container {
+  background-color: #09184f;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 1200px;
+  height: 500px;
+  text-align: left;
+  position: relative;
+}
+
+.event_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.event_image {
+  max-width: 40%;
+  width: 400px;
+  margin-right: 100px; /* Adjust the margin to control the spacing between image and text */
+  margin-left: 120px;
+}
+
+.event_text {
+  max-width: 60%; /* Adjust the max-width to control the width of the text content */
+  padding: 20px;
+  color: white;
+  margin-left: -80px;
+}
+
+
+.event_text h1 {
+  font-size: 36px; /* Adjust the font size */
+  margin-top: 0; /* Remove negative margin-top */
+}
+
+.event_text p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.event_text button {
+  background-color: #ff9900;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add margin-top for spacing */
+}
+
+.event_text button:hover {
+  background-color: #FFFDD0;
+}

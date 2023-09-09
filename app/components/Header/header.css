@@ -1,0 +1,94 @@
+/* Header container */
+.Header_CISD {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    padding-top: 30px;
+  }
+  
+
+
+  /* LOGO DONE */
+  .CSID_LOGO {
+     /* Adjust the size as needed width: 600px;*/
+    align-items: center;
+  }
+
+
+  .CSID_LOGO_img{
+    margin-left: 50px;
+    width: 200px;
+  }
+
+
+  /* LOGO_CISD */
+  .CISD_LOGO_img{
+    /* margin-left: 40px; */
+    width: 50px;
+  }
+  
+  .x_img{
+    width: 20px;
+  }
+
+
+  /* Navigation */
+  .Navigation_item ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-left: 60px;
+
+  }
+  
+  .Navigation_item li {
+    font-size: 18px;
+  }
+  
+  .Navigation_item a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .Navigation_item a:hover {
+    color: #09184f;
+  }
+  
+
+
+
+
+
+
+
+
+
+  /* Actions */
+  .actions {
+    display: flex;
+    gap: 5px;
+    margin-left: 460px;
+  }
+  
+  .dark-mode,
+  .join-us {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 40px;
+  }
+
+  
+  .dark-mode:hover,
+  .join-us:hover {
+    background-color: #09184f;
+    color: #ffffff;
+  }

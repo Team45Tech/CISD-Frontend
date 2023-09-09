@@ -1,0 +1,32 @@
+/* Footer.css */
+
+/* Footer container */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #145c38; /* Background color for the footer */
+    color: #fff; /* Text color */
+  }
+  
+  /* Footer links */
+  .footer a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: #fff; /* Text color for links */
+    margin-right: 1rem; /* Spacing between links */
+  }
+  
+  /* Footer links on hover */
+  .footer a:hover {
+    background-color: #09184f; /* Background color on hover */
+  }
+  
+  /* Copyright text */
+  .footer p {
+    font-size: 0.875rem; /* Text size */
+  }
+  

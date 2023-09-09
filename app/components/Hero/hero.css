@@ -1,0 +1,62 @@
+/* hero.css */
+
+.hero_outer_container {
+    display: flex;
+    height: 60vh; /* Make it half of the screen size */
+    background-color: white; /* White background on the left */
+  }
+  
+  .hero_left_container {
+    flex: 1; /* Take up half of the parent container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero_left_smaller_container img {
+    width: 360px;
+    margin-left: 120px;
+  }
+
+
+  /* Right Container.csas */
+  .hero_right_container {
+    flex: 2; /* Take up half of the parent container */
+    background-color:rgba(9,24,79,255); /* Blue background on the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; /* Text color on the right */
+  }
+  
+  .hero_right_smaller_container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero_right_header {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero_right_paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .hero_right_button {
+    background-color: #FFA500; /* Blue button background color */
+    color: rgb(16, 16, 16);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero_right_button:hover {
+    background-color: #FFFDD0; /* Darker blue on hover */
+  }
+  
