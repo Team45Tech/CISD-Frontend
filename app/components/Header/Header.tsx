@@ -1,9 +1,20 @@
 'use client'
 
 import React from 'react';
+import {Link, animateScroll as scroll} from 'react-scroll';
 import '../Header/header.css'
 
 export default function Header() {
+
+  const scrollToPosition = () =>{
+    const targetPostion = 500;
+    window.scrollTo({
+      top : targetPostion,
+      behavior: 'smooth'
+    });
+  };
+
+
   return (
 
     <header className="Header_CISD">
@@ -15,7 +26,7 @@ export default function Header() {
       <nav className="Navigation_item">
         
         <ul>
-          <li><a href="/">Contact Us</a></li>
+          <li><a onClick={scrollToPosition}>Contact Us</a></li>
           <li><a href="/student">Student</a></li>
           <li><a href="aboutus">About Us</a></li>
         </ul>

@@ -3,6 +3,7 @@
 import React from 'react'
 
 
+
 // COMPONENET PAGE IMPORTING 
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
@@ -17,6 +18,9 @@ import About from '../components/About/about'
 
 
 const Page = () => {
+
+
+
   return (
     <div>
       <Header/>
