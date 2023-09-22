@@ -14,6 +14,22 @@ export default function Header() {
     });
   };
 
+  const scrollStudent = () => {
+    const targetPostion2 = 1200
+    window.scroll({
+      top:targetPostion2,
+      behavior: 'smooth'
+    })
+  }
+
+  const scrollAbout = () =>{
+    const targetPostion3 = 2000
+    window.scroll({
+      top:targetPostion3,
+      behavior:'smooth'
+    })
+  }
+
 
   return (
 
@@ -27,8 +43,8 @@ export default function Header() {
         
         <ul>
           <li><a onClick={scrollToPosition}>Contact Us</a></li>
-          <li><a href="/student">Student</a></li>
-          <li><a href="aboutus">About Us</a></li>
+          <li><a onClick={scrollStudent}>Student</a></li>
+          <li><a onClick={scrollAbout}>About Us</a></li>
         </ul>
       </nav>
     <div className="actions">

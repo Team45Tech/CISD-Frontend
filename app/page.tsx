@@ -9,7 +9,7 @@ export default function Home() {
 
 
   function linkpage(){
-    const link = 'https://www.linkedin.com/in/maxhao/';
+    const link = 'https://www.google.com/search?gs_ssp=eJzj4tLP1TcoNzC2MDBVYDRgdGDw4sjJzMtOTcnMAwBRaga5&q=linkedin&oq=link&aqs=chrome.1.69i60j46i39i199i465i650j69i57j0i131i433i512j0i433i512j69i60l3.4130j0j7&sourceid=chrome&ie=UTF-8';
     window.open(link);
   };
 
@@ -24,7 +24,7 @@ export default function Home() {
       <div className='bg-construction-bg overflow-auto bg-local h-screen'>
         <div className='backdrop-blur-xl h-screen w-screen'>
           <div className='flex justify-end pt-5'>
-            <a href="aboutus" className='text-right text-gray-300 no-underline pr-10 '>About Us</a>
+            <a href="hero" className='text-right text-gray-300 no-underline pr-10 '>About Us</a>
           </div>
 
           <div className='pt-32 text-center tracking-wide'>
