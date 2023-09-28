@@ -2,20 +2,22 @@
 
 .hero_outer_container {
     display: flex;
-    height: 60vh; /* Make it half of the screen size */
+    height: 90vh; /* Make it half of the screen size */
     background-color: white; /* White background on the left */
   }
   
   .hero_left_container {
-    flex: 1; /* Take up half of the parent container */
-    display: flex;
+    /*flex: 1; /* Take up half of the parent container */
+    display: flex; 
+    position: relative;
+    width: 50%;
+
     justify-content: center;
     align-items: center;
   }
   
   .hero_left_smaller_container img {
-    width: 360px;
-    margin-left: 120px;
+    width: 400px;
   }
 
 
@@ -26,24 +28,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 50%;
+
     flex-direction: column;
     color: white; /* Text color on the right */
   }
   
   .hero_right_smaller_container {
-    text-align: center;
-    padding: 20px;
+    padding-right: 20%;
+    padding-bottom: 7%;
   }
   
   .hero_right_header {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px;
+    line-height: 2;
   }
   
   .hero_right_paragraph {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .hero_right_name {
     font-size: 16px;
     margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: left;
+    font-family:Helvetica, sans-serif;
+    font-weight: bold;
+    color: #cab999;
   }
   
   .hero_right_button {
