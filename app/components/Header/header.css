@@ -4,8 +4,8 @@
     flex-direction: row;
     align-items: center;
     background-color: #ffffff;
-    padding: 30px 20px;
-    padding-top: 30px;
+    padding: 20px 20px;
+    /* padding-top: 30px; */
   }
   
 
@@ -17,29 +17,29 @@
   }
 
 
-  .CSID_LOGO_img{
+  /* .CSID_LOGO_img{
     margin-left: 50px;
     width: 200px;
-  }
+  } */
 
 
   /* LOGO_CISD */
   .CISD_LOGO_img{
-    /* margin-left: 40px; */
-    width: 50px;
+    margin-left: 40px; 
+    width: 60px;
   }
   
-  .x_img{
+  /* .x_img{
     width: 20px;
-  }
+  } */
 
 
   /* Navigation */
   .Navigation_item ul {
     list-style: none;
     display: flex;
-    gap: 40px;
-    margin-left: 60px;
+    gap: 100px ;
+    margin-left: 100px;
 
   }
   
@@ -49,21 +49,17 @@
   
   .Navigation_item a {
     text-decoration: none;
-    color: #000000;
+    color: #09184f;
     transition: color 0.3s ease;
-    font-weight: 500;
+    font-weight:600
   }
   
   .Navigation_item a:hover {
+    text-decoration: underline;
     color: #09184f;
+    cursor: pointer;
   }
   
-
-
-
-
-
-
 
 
 
@@ -92,3 +88,5 @@
     background-color: #09184f;
     color: #ffffff;
   }
+
+
