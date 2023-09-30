@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .application_header_container {
     text-align: center;
     margin-bottom: 20px;
@@ -19,11 +19,13 @@
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: whitesmoke;
   }
   
   .application_paragraph {
     font-size: 24px;
     margin-bottom: 20px;
+    color: whitesmoke;
   }
   
   .application_lower_container {
@@ -44,7 +46,35 @@
     flex-direction: column;
     align-items: left;
     margin-top: 20px;
+    color: whitesmoke;
   }
+
+  /*真不会啊……*/
+  .banner_container { 
+    width: 94%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    margin: auto;             /* Horizontally center using margin */
+  }
+
+.right_banner_container {
+  width: 94%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  margin: auto;             /* Horizontally center using margin */
+}
 
 
   /* .application_left_lower_container img {
@@ -89,6 +119,7 @@
     line-height: 1.5;
     writing-mode: horizontal-tb; 
     text-orientation: upright;
+    color: whitesmoke;
   }
 
 
@@ -128,9 +159,7 @@
 
 
 
-.application_right_lower_container img:hover,
 .application_center_lower_container img:hover,
-.application_left_lower_container img:hover,
 .left_header:hover,
 .right_header:hover,
 .left_button:hover,
@@ -139,4 +168,5 @@
   transition: transform 0.3s ease; /* Add a smooth transition effect */
   background-color: #FFA500;
   cursor: pointer;
+  color: whitesmoke;
 }
