@@ -17,6 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+      <div id="root"></div>
+      <script type="module" src="/pages/main.tsx"></script>
     </html>
+    
+  
   )
 }
