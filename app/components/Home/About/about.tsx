@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import '../About/about.css';
+import './about.css';
 
 const About = () => {
   const [hovered1, setHovered1] = useState(false);

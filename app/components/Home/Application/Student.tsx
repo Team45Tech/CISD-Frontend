@@ -2,7 +2,7 @@
 
 
 import React from 'react';
-import '../Application/student.css'
+import './student.css'
 
 const Student = () => {
   return (
