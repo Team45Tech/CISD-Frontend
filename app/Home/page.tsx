@@ -9,10 +9,10 @@ import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import Contact from '../contact/Contact'
 
-import Student from '../components/Application/Student'
-import Hero from '../components/Hero/Hero'
-import Event from '../components/Event/Event'
-import About from '../components/About/about'
+import Student from '../components/Home/Application/Student'
+import Hero from '../components/Home/Hero/Hero'
+import Event from '../components/Home/Event/Event'
+import About from '../components/Home/About/about'
 
 
 

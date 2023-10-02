@@ -24,7 +24,7 @@ export default function Home() {
       <div className='bg-construction-bg overflow-auto bg-local h-screen'>
         <div className='backdrop-blur-xl h-screen w-screen'>
           <div className='flex justify-end pt-5'>
-            <a href="hero" className='text-right text-gray-300 no-underline pr-10 '>About Us</a>
+            <a href="Home" className='text-right text-gray-300 no-underline pr-10 '>About Us</a>
           </div>
 
           <div className='pt-32 text-center tracking-wide'>
