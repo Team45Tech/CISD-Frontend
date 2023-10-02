@@ -7,7 +7,7 @@ import React from 'react'
 // COMPONENET PAGE IMPORTING 
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Contact from '../contact/Contact'
+
 
 import Student from '../components/Application/Student'
 import Hero from '../components/Hero/Hero'
