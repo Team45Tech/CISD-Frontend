@@ -2,9 +2,19 @@
 
 
 import React from 'react';
-import '../Application/student.css'
+import './student.css'
+import { useNavigate } from 'react-router-dom';
+
 
 const Student = () => {
+
+  // const navigate = useNavigate();
+
+  // const handleClick = () => {
+
+  //   navigate('/Member_page')
+  // };
+
   return (
     <div className='application_outer_container'>
       <div className='application_header_container'>
@@ -20,7 +30,13 @@ const Student = () => {
         </div>
 
         <div className='application_center_lower_container'>
-          <img src='/UofA.png' alt='Members'  />
+
+          <img 
+          src='/UofA.png' 
+          alt='Members'  
+          //onClick={handleClick}
+          />
+          
           <div className='section_header'>部门介绍</div>
           <div className='section_paragraph'>我们不需要证明自己,一心一意的贡献是我们行动</div>
           {/* <button className='left_button'>button</button> */}
