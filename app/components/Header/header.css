@@ -1,46 +1,56 @@
 /* Header container */
-.Header_CISD {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 30px 20px;
-    padding-top: 30px;
-  }
+.Header_CISD {    /* header 一直保持在页面顶部*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 14px 20px;
+  z-index: 1000; /* 确保 header 在其他内容之上 */
+}
   
 
 
   /* LOGO DONE */
-  .CSID_LOGO {
+  .CISD_LOGO {
      /* Adjust the size as needed width: 600px;*/
     align-items: center;
   }
 
-
-  .CSID_LOGO_img{
-    margin-left: 50px;
-    width: 200px;
+  .CISD_LOGO_word{
+    margin-left: 20px;
+    width: 100px;
   }
 
-
-  /* LOGO_CISD */
   .CISD_LOGO_img{
-    /* margin-left: 40px; */
-    width: 50px;
+    margin-left: 40px; 
+    width: 60px;
   }
   
-  .x_img{
-    width: 20px;
+  .CISD_name{
+    margin-left: 10px; 
+    width: 160px;
   }
+
 
 
   /* Navigation */
+  .Navigation_item {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* 设置为 auto，使其右对齐 */
+    padding-right: 5%;
+
+  }
+
   .Navigation_item ul {
     list-style: none;
     display: flex;
-    gap: 40px;
-    margin-left: 60px;
-
+    gap: 80px ;
   }
   
   .Navigation_item li {
@@ -49,21 +59,17 @@
   
   .Navigation_item a {
     text-decoration: none;
-    color: #000000;
+    color: #09184f;
     transition: color 0.3s ease;
-    font-weight: 500;
+    font-weight:600
   }
   
   .Navigation_item a:hover {
+    text-decoration: underline;
     color: #09184f;
+    cursor: pointer;
   }
   
-
-
-
-
-
-
 
 
 
@@ -92,3 +98,5 @@
     background-color: #09184f;
     color: #ffffff;
   }
+
+
