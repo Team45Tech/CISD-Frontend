@@ -11,8 +11,6 @@
   background-color: white;
   padding: 14px 20px;
   z-index: 1000; /* 确保 header 在其他内容之上 */
-  border-radius: 2%;
-  border-bottom: 5px solid var(--main-color);
 }
   
 
@@ -21,21 +19,28 @@
   .CISD_LOGO {
      /* Adjust the size as needed width: 600px;*/
     align-items: center;
+    display:flex
   }
 
   .CISD_LOGO_word{
     margin-left: 20px;
     width: 100px;
+    
+
   }
 
   .CISD_LOGO_img{
     margin-left: 40px; 
     width: 60px;
+    cursor: pointer;
+
   }
   
   .CISD_name{
     margin-left: 10px; 
     width: 160px;
+    cursor: pointer;
+
   }
 
 
@@ -50,14 +55,17 @@
   }
 
   .Navigation_item ul {
-    list-style: none;
+    list-style:none;
     display: flex;
-    gap: 80px ;
+    gap: 60px
   }
   
   .Navigation_item li {
+    
     font-size: 18px;
+
   }
+  
   
   .Navigation_item a {
     text-decoration: none;
