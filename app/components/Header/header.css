@@ -8,9 +8,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #ffffff;
+  background-color: white;
   padding: 14px 20px;
   z-index: 1000; /* 确保 header 在其他内容之上 */
+  border-radius: 2%;
+  border-bottom: 5px solid var(--main-color);
 }
   
 
@@ -59,14 +61,14 @@
   
   .Navigation_item a {
     text-decoration: none;
-    color: #09184f;
+    color: var(--main-color);
     transition: color 0.3s ease;
     font-weight:600
   }
   
   .Navigation_item a:hover {
     text-decoration: underline;
-    color: #09184f;
+    color: var(--main-color);
     cursor: pointer;
   }
   
@@ -82,8 +84,8 @@
   
   .dark-mode,
   .join-us {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: white;
+    color: black;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -95,8 +97,8 @@
   
   .dark-mode:hover,
   .join-us:hover {
-    background-color: #09184f;
-    color: #ffffff;
+    background-color: var(--main-color);
+    color: white;
   }
 
 

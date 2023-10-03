@@ -1,13 +1,12 @@
-'use client'
+// Header.tsx
 
-import React from 'react';
+import React, { useRef } from 'react';
 import {Link, animateScroll as scroll} from 'react-scroll';
 import '../Header/header.css'
 import { scrollToBottom, scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
-
 export default function Header() {
 
-  const scrollHome = () =>{
+  const scrollToTop = () =>{
     window.scrollTo({
       top : 0,
       behavior: 'smooth'
@@ -15,7 +14,7 @@ export default function Header() {
   };
 
   const scrollStudent = () =>{
-    const targetPostion = 700;
+    const targetPostion = 730;
     window.scrollTo({
       top : targetPostion,
       behavior: 'smooth'
@@ -23,7 +22,7 @@ export default function Header() {
   };
 
   const scrollAbout = () =>{
-    const targetPostion3 = 1500
+    const targetPostion3 = 1560
     window.scroll({
       top:targetPostion3,
       behavior:'smooth'
@@ -40,10 +39,7 @@ export default function Header() {
   return (
 
     <header className="Header_CISD">
-      {/* <div className="CSID_LOGO">
-        <img src="/School_logo.png" alt="UofA" className='CSID_LOGO_img' />
-      </div>
-      <div className='CSID_LOGO'><img src="/x.png" alt="CISD" className='x_img' /></div> */}
+      
       <div className='CSID_LOGO'>
         <img src="/CISD_logo_sq.png" alt="CISD" className='CISD_LOGO_img' /></div>  
       <div className='CISD_LOGO'>
@@ -55,21 +51,14 @@ export default function Header() {
       <nav className="Navigation_item">
         
         <ul>
-          <li><a onClick={scrollHome}>主页 </a></li>
+          <li><a onClick={scrollToTop}>主页 </a></li>
           <li><a onClick={scrollStudent}>吃喝玩乐（暂定）</a></li>
           <li><a onClick={scrollAbout}>关于我们</a></li>
-          <li><a onClick={scrollToBottom}>赞助商</a></li>
+          <li><a onClick={scrollToBottom}>活动预告</a></li>
 
         </ul>
       </nav>
-    {/* <div className="actions">
-      <div className="dark-mode">
-        Dark Mode
-      </div>
-      <div className="join-us">
-        Join Us
-      </div>
-    </div> */}
+    
     </header>
 
 

@@ -2,7 +2,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import '../Hero/hero.css'
+import './hero.css'
 
 type Slide = {
   src: string;
