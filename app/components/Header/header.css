@@ -12,6 +12,7 @@
   padding: 14px 20px;
   z-index: 1000; /* 确保 header 在其他内容之上 */
   border-radius: 2%;
+  border-bottom: 5px solid var(--main-color);
 }
   
 
