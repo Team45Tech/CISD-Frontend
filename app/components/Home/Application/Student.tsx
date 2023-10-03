@@ -2,9 +2,13 @@
 
 
 import React from 'react';
-import './student.css'
 
-const Student = () => {
+import './about.css'
+import { useNavigate } from 'react-router-dom';
+import Link from 'next/link';
+
+const About = () => {
+
   return (
     <div className='application_outer_container'>
       <div className='application_header_container'>
@@ -20,7 +24,13 @@ const Student = () => {
         </div>
 
         <div className='application_center_lower_container'>
-          <img src='/UofA.png' alt='Members'  />
+          <Link href='/member'>
+          
+            <img src='/UofA.png' alt='Members'  />
+            
+          </Link>
+          
+          
           <div className='section_header'>部门介绍</div>
           <div className='section_paragraph'>我们不需要证明自己,一心一意的贡献是我们行动</div>
           {/* <button className='left_button'>button</button> */}
@@ -37,4 +47,4 @@ const Student = () => {
   )
 }
 
-export default Student
+export default About

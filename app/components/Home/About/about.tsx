@@ -1,63 +1,50 @@
 'use client'
 
-import React, { useState } from 'react';
-import './about.css';
+
+import React from 'react';
+import './about.css'
+import { useNavigate } from 'react-router-dom';
+import Link from 'next/link';
 
 const About = () => {
-  const [hovered1, setHovered1] = useState(false);
-  const [hovered2, setHovered2] = useState(false);
-  const [hovered3, setHovered3] = useState(false);
-  const [hovered4, setHovered4] = useState(false);
+
 
   return (
-    <div className='about_outer_container'>
-      <div className='about_header'>中国留学生发展协会在UA</div>
-      <div className='about_paragraph'>
-        提供给留学生更保障的大学生活和更成功的工作机会并不只是我们的目标-是我们的承诺
+    <div className='application_outer_container'>
+      <div className='application_header_container'>
+        <div className='application_header'>梦想-投入-蜕变</div>
+        <div className='application_paragraph'>好奇,决心,目标驱使着我们挑战自我</div>
       </div>
-      <div className='about_gallery'>
-        <div
-          className='image-container'
-          onMouseEnter={() => setHovered1(true)}
-          onMouseLeave={() => setHovered1(false)}
-        >
-          <img src="/img1.jpg" alt="Image 1" className={hovered1 ? 'hidden' : ''} />
-          <img src="/UofA.png" alt="Hover Image 1" className={hovered1 ? '' : 'hidden'} />
-          <div className='about_text'>剧本杀-艾德明顿冬天唯一的娱乐活动</div>
+      <div className='application_lower_container'>
+        <div className='application_left_lower_container'>
+          <img src='/UofA.png' alt='Past Events'  />
+          <p className='section_header'>往期活动</p>
+          <div className='section_paragraph'>我们有着丰富的活动经验</div>
+          {/* <button className='left_button'>入团申请提交</button> */}
         </div>
 
-        <div
-          className='image-container'
-          onMouseEnter={() => setHovered2(true)}
-          onMouseLeave={() => setHovered2(false)}
-        >
-          <img src="/img2.jpg" alt="Image 2" className={hovered2 ? 'hidden' : ''} />
-          <img src="/UofA.png" alt="Hover Image 2" className={hovered2 ? '' : 'hidden'} />
-          <div className='about_text'>新生帮忙-我们是你最坚强的后盾</div>
+        <div className='application_center_lower_container'>
+          <Link href='/member'>
+          
+            <img src='/UofA.png' alt='Members'  />
+            
+          </Link>
+          
+          
+          <div className='section_header'>部门介绍</div>
+          <div className='section_paragraph'>我们不需要证明自己,一心一意的贡献是我们行动</div>
+          {/* <button className='left_button'>button</button> */}
         </div>
 
-        <div
-          className='image-container'
-          onMouseEnter={() => setHovered3(true)}
-          onMouseLeave={() => setHovered3(false)}
-        >
-          <img src="/img3.jpg" alt="Image 3" className={hovered3 ? 'hidden' : ''} />
-          <img src="/UofA.png" alt="Hover Image 3" className={hovered3 ? '' : 'hidden'} />
-          <div className='about_text'>课程推荐-我们将带领你们走向GPA4.0</div>
-        </div>
-
-        <div
-          className='image-container'
-          onMouseEnter={() => setHovered4(true)}
-          onMouseLeave={() => setHovered4(false)}
-        >
-          <img src="/img4.jpg" alt="Image 4" className={hovered4 ? 'hidden' : ''} />
-          <img src="/UofA.png" alt="Hover Image 4" className={hovered4 ? '' : 'hidden'} />
-          <div className='about_text'>社团实习-简历上的空白是最后遗迹</div>
+        <div className='application_right_lower_container'>
+          <img src='/UofA.png' alt='Application' />
+          <div className='section_header'>加入我们</div>
+          <div className='section_paragraph'>我们不需要证明自己,一心一意的贡献是我们行动</div>
+          {/* <button className='right_button'>活动预告</button> */}
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

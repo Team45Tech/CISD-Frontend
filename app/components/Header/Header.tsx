@@ -1,10 +1,9 @@
-'use client'
+// Header.tsx
 
-import React from 'react';
+import React, { useRef } from 'react';
 import {Link, animateScroll as scroll} from 'react-scroll';
 import '../Header/header.css'
 import { scrollToBottom, scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
-
 export default function Header() {
 
   const scrollToTop = () =>{
@@ -59,14 +58,7 @@ export default function Header() {
 
         </ul>
       </nav>
-    {/* <div className="actions">
-      <div className="dark-mode">
-        Dark Mode
-      </div>
-      <div className="join-us">
-        Join Us
-      </div>
-    </div> */}
+    
     </header>
 
 
