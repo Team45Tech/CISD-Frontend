@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 import {Link, animateScroll as scroll} from 'react-scroll';
 import '../Header/header.css'
 import { scrollToBottom, scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
+
 export default function Header() {
 
   const scrollToTop = () =>{
@@ -14,7 +15,7 @@ export default function Header() {
   };
 
   const scrollStudent = () =>{
-    const targetPostion = 730;
+    const targetPostion = 735;
     window.scrollTo({
       top : targetPostion,
       behavior: 'smooth'
@@ -40,12 +41,18 @@ export default function Header() {
 
     <header className="Header_CISD">
       
-      <div className='CSID_LOGO'>
-        <img src="/CISD_logo_sq.png" alt="CISD" className='CISD_LOGO_img' /></div>  
       <div className='CISD_LOGO'>
-        <img src="/CISD_logo_word.png" alt="CISD" className='CISD_LOGO_word' /></div>
-      <div className='CISD_LOGO'>
-        <img src="/CISD_name.png" alt="CISD" className='CISD_name' /></div>
+        <a href='/'>
+          <img src="/CISD_logo_sq.png" alt="CISD" className='CISD_LOGO_img' />
+        </a>
+        <a href='/'>
+          <img src="/CISD_logo_word.png" alt="CISD" className='CISD_LOGO_word' />
+        </a>
+        <a href='/'>
+          <img src="/CISD_name.png" alt="CISD" className='CISD_name' />
+        </a>
+      </div>  
+      
       
         
       <nav className="Navigation_item">
@@ -54,7 +61,8 @@ export default function Header() {
           <li><a onClick={scrollToTop}>主页 </a></li>
           <li><a onClick={scrollStudent}>吃喝玩乐（暂定）</a></li>
           <li><a onClick={scrollAbout}>关于我们</a></li>
-          <li><a onClick={scrollToBottom}>活动预告</a></li>
+          {/* <li><a onClick={scrollToBottom}>活动预告</a></li> */}
+          <li><a onClick={scrollToBottom}>联系我们</a></li>
 
         </ul>
       </nav>
