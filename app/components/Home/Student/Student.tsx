@@ -1,11 +1,10 @@
 'use client'
 
 import React, { useState } from 'react';
-<<<<<<<< HEAD:app/components/Home/Student/Student.tsx
+
 import './student.css';
-========
-import './about.css';
->>>>>>>> Kiana:app/components/Home/About/about.tsx
+
+
 
 const About = () => {
   const [hovered1, setHovered1] = useState(false);
