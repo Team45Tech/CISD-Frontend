@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 4rem;
     background-color: #09184f; /* Background color for the footer */
     color: #fff; /* Text color */
   }

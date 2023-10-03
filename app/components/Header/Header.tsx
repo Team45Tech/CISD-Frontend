@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   const scrollStudent = () =>{
-    const targetPostion = 700;
+    const targetPostion = 415;
     window.scrollTo({
       top : targetPostion,
       behavior: 'smooth'
@@ -23,7 +23,7 @@ export default function Header() {
   };
 
   const scrollAbout = () =>{
-    const targetPostion3 = 1500
+    const targetPostion3 = 1100
     window.scroll({
       top:targetPostion3,
       behavior:'smooth'
@@ -56,7 +56,7 @@ export default function Header() {
         
         <ul>
           <li><a onClick={scrollHome}>主页 </a></li>
-          <li><a onClick={scrollStudent}>吃喝玩乐（暂定）</a></li>
+          <li><a onClick={scrollStudent}>吃喝玩乐</a></li>
           <li><a onClick={scrollAbout}>关于我们</a></li>
           <li><a onClick={scrollToBottom}>赞助商</a></li>
 

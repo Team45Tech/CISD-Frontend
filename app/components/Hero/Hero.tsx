@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // 自动轮播的时间间隔（毫秒）
-  const autoPlayInterval = 3000;
+  const autoPlayInterval = 12000;
 
   // Array of slides with image source and alt text
   const slides = [
@@ -74,23 +74,6 @@ const Hero: React.FC = () => {
           ))}
         </div>
 
-
-        {/* 左箭头按钮 */}
-        <img
-          className="change pre"
-          src="icon_pre.svg"
-          alt="Previous"
-          onClick={goToPrevSlide}
-        />
-
-        {/* 右箭头按钮 */}
-        <img
-          className="change next"
-          src="icon_next.svg"
-          alt="Next"
-          onClick={goToNextSlide}
-        />
-
         <div className="cirbox">
           {slides.map((slide, index) => (
             <div
@@ -105,62 +88,3 @@ const Hero: React.FC = () => {
   )
 }
 export default Hero
-
-
-// const Hero = () => {
-
-
-
-//   return (
-//     <div className='hero_outer_container'>
-//     <div className='banner_container'>
-      
-//       <img className="change pre"  src="icon_pre.svg" />
-//       <img className="change next" src="icon_next.svg" />
-
-//       <div className='cirbox'>
-//       <div className="cir cr"></div>
-//         <div className="cir"></div>
-//         <div className="cir"></div>
-//         <div className="cir"></div>
-//       </div>
-
-
-//       <div className='imgbox'>
-//         <img src='img1.jpg' alt='slide1' />
-//         <img src='img1.jpg' alt='slide1' />
-//       </div>
-//     </div>
-//     </div>
-
-//     // <div className='hero_outer_container'>
-
-//     //     <div className='hero_left_container'>
-//     //         <div className='hero_left_smaller_container'><img src='CISD_logo.jpg' alt='UACISD' /></div>
-//     //     </div>
-
-      
-//     //     <div className='hero_right_container'>
-//     //         <div className='hero_right_smaller_container'>
-//     //           <div className='hero_right_header'>欢迎来到 UACISD</div>
-//     //           <div className='hero_right_paragraph'>
-//     //             阿尔伯塔大学<br />
-//     //             中国留学生发展协会<br />
-//     //           </div>
-//     //           <div className='hero_right_name'>
-//     //             U OF ALBERTA<br />
-//     //             CHINESE INTERNATIONAL <br />
-//     //             STUDENTS DEVELOPMENT SOCIETY 
-//     //           </div>
-//     //           {/* <div className='hero_right_button'>加入我们</div> */}
-//     //         </div>
-
-//     //     </div>
-        
-
-//     // </div>
-
-    
-//   )
-// }
-// export default Hero
