@@ -1,9 +1,10 @@
 .event_outer_container {
   background-color: white;
-  height: 90vh;
+  height: auto; /* Adjust height based on content */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0; /* Add vertical padding */
 }
 
 .event_inner_container {
@@ -11,8 +12,8 @@
   display: flex;
   align-items: center;
   padding: 20px;
-  width: 1200px;
-  height: 500px;
+  max-width: 1200px; /* Set a max-width */
+  width: 100%; /* Take full width */
   text-align: left;
   position: relative;
 }
@@ -28,16 +29,13 @@
   max-width: 40%;
   width: 400px;
   margin-right: 100px; /* Adjust the margin to control the spacing between image and text */
-  margin-left: 120px;
 }
 
 .event_text {
   max-width: 60%; /* Adjust the max-width to control the width of the text content */
   padding: 20px;
   color: white;
-  margin-left: -80px;
 }
-
 
 .event_text h1 {
   font-size: 36px; /* Adjust the font size */
@@ -61,4 +59,24 @@
 
 .event_text button:hover {
   background-color: #FFFDD0;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  .event_content {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .event_image {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    width: 80%; /* Adjust width for smaller screens */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .event_text {
+    max-width: 100%; /* Take full width */
+    padding: 10px; /* Reduce padding */
+    text-align: center; /* Center the text */
+  }
 }

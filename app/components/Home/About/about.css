@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
   }
   
   .application_header_container {
@@ -139,4 +140,28 @@
   transition: transform 0.3s ease; /* Add a smooth transition effect */
   background-color: #FFA500;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .application_lower_container {
+    flex-direction: column;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
+    align-items: center;
+  }
+
+  .application_left_lower_container,
+  .application_center_lower_container,
+  .application_right_lower_container {
+    margin: 20px 0; /* Increase vertical margin for better spacing */
+    align-items: center; /* Center the content */
+    max-width: 90%; /* Adjust the width to fit smaller screens */
+    text-align: center; /* Center the text content */
+  }
+
+  .section_header, .section_paragraph {
+    text-align: center; /* Center the headers and paragraphs */
+    writing-mode: horizontal-tb; /* Reset the writing mode */
+    text-orientation: mixed; /* Reset the text orientation */
+  }
 }

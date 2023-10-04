@@ -2,52 +2,58 @@
 
 /* Footer container */
 .footer {
-    height: 40vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #09184f; /* Background color for the footer */
-    color: #fff; /* Text color */
-  }
-  
-  /* Footer links */
-  .footer a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    color: #fff; /* Text color for links */
-    margin-right: 1rem; /* Spacing between links */
-  }
-  
- 
-  
-  /* Copyright text */
-  .footer p {
-    font-size: 0.875rem; /* Text size */
-  }
-
-  .email_container {
-    width: 20%;
-    margin-left: 15%; 
-
-  }
-
-  .logo_img {
-    /* Adjust the size as needed width: 600px;*/
-    align-items: center;
-    width: 40%;
-    cursor: pointer;
- }
-  
-
- .copyright_container {
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
+  height: auto; /* Adjust height to content */
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #09184f; /* Background color for the footer */
+  color: #fff; /* Text color */
 }
 
+/* Footer links */
+.footer a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #fff; /* Text color for links */
+  margin-right: 1rem; /* Spacing between links */
+}
 
+/* Copyright text */
+.footer p {
+  font-size: 0.875rem; /* Text size */
+  margin-left: 1rem; /* Add some spacing between the logo and the text */
+}
 
-  
+.email_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_img {
+  align-items: center;
+  width: 40%;
+  cursor: pointer;
+  max-width: 200px; /* Set a max-width to ensure the logo doesn't get too large */
+}
+
+.copyright_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  .logo_img {
+      width: 30%; /* Reduce the width for smaller screens */
+  }
+
+  .footer p {
+      font-size: 0.75rem; /* Reduce the font size for smaller screens */
+  }
+}

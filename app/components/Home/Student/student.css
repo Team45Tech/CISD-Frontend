@@ -7,9 +7,11 @@
   text-align: center;
   background-color: white;
   color: black;
-  height: 95vh;
+  min-height: 95vh; /* Use min-height instead of height */
   padding-top: 15px;
+  padding-bottom: 40px;
 }
+
 
 .about_header {
   padding-top: 30px;
@@ -66,4 +68,38 @@
 
 .image-container:hover .about_text {
   opacity: 1;
+}
+
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  .about_gallery {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .about_header {
+    font-size: 28px;
+  }
+
+  .about_paragraph {
+    font-size: 18px;
+  }
+
+  .image-container img {
+    width: 250px;
+  }
+
+  .about_text {
+    font-size: 16px;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 768px) {
+  .about_gallery {
+    flex-direction: row; /* This will layout the divs horizontally */
+    gap: 60px;
+  }
 }

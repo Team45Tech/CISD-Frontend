@@ -1,13 +1,14 @@
 /* styles.css */
 .application_outer_container {
-    background-color: #09184f;
-    padding: 20px;
-    height: 110vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  background-color: #09184f;
+  padding: 20px;
+  /* Remove fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
   
   .application_header_container {
     text-align: center;
@@ -139,4 +140,36 @@
   transition: transform 0.3s ease; /* Add a smooth transition effect */
   background-color: #FFA500;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .application_lower_container {
+    flex-direction: column !important;
+    padding-inline-start: 5% !important;
+    padding-inline-end: 5% !important;
+    align-items: center !important;
+  }
+
+  .application_left_lower_container,
+  .application_center_lower_container,
+  .application_right_lower_container {
+    margin: 20px 0 !important;
+    align-items: center !important;
+    max-width: 90% !important;
+    text-align: center !important;
+  }
+
+  .section_header, .section_paragraph {
+    text-align: center !important;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .application_left_lower_container,
+  .application_center_lower_container,
+  .application_right_lower_container {
+    background-color: red !important; /* This is just for testing */
+  }
 }

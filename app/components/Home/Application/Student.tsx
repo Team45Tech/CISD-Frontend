@@ -3,8 +3,8 @@
 
 import React from 'react';
 
-import './about.css'
-import { useNavigate } from 'react-router-dom';
+import './student.css'
+//import { useNavigate } from 'react-router-dom';
 import Link from 'next/link';
 
 const About = () => {
