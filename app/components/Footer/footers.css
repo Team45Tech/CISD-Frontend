@@ -84,7 +84,9 @@ ul{
     width: 50%;
 }
 
-
+.copyright{
+  margin-top: 20%;
+}
 
 /*responsive*/
 @media(max-width: 767px){

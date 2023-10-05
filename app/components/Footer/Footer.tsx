@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
 
           <div className='footer-col'>
-            <p>&copy; 2023 By Team56Tech.</p>
+            <p className='copyright'>&copy; 2023 By Team56Tech.</p>
           </div>
         </div>
       </div>
