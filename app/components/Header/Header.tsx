@@ -37,6 +37,14 @@ export default function Header() {
     })
   }
 
+
+  const scrollsponsor= () =>{
+    const targetPostion3 = 1800
+    window.scroll({
+      top:targetPostion3,
+      behavior:'smooth'
+    })
+  }
   return (
 
     <header className="Header_CISD">
@@ -58,7 +66,7 @@ export default function Header() {
           <li><a onClick={scrollHome}>主页 </a></li>
           <li><a onClick={scrollStudent}>吃喝玩乐</a></li>
           <li><a onClick={scrollAbout}>关于我们</a></li>
-          <li><a onClick={scrollToBottom}>赞助商</a></li>
+          <li><a onClick={scrollsponsor}>赞助商</a></li>
 
         </ul>
       </nav>

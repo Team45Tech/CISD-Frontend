@@ -10,16 +10,7 @@
     color: #fff; /* Text color */
   }
   
-  /* Footer links */
-  .footer a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    color: #fff; /* Text color for links */
-    margin-right: 1rem; /* Spacing between links */
-  }
-  
+
   /* Footer links on hover */
   .footer a:hover {
     background-color: #09184f; /* Background color on hover */
@@ -30,3 +21,12 @@
     font-size: 0.875rem; /* Text size */
   }
   
+  .footer_second_section {
+    flex: 1;
+    padding: 20px;
+  }
+
+
+  .footer_img{
+    width: 10%;
+  }
