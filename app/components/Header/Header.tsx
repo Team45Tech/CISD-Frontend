@@ -37,6 +37,9 @@ export default function Header() {
     })
   }
 
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+
   return (
 
     <header className="Header_CISD">
@@ -51,11 +54,17 @@ export default function Header() {
         <a href='/'>
           <img src="/CISD_name.png" alt="CISD" className='CISD_name' />
         </a>
-      </div>  
-      
+      </div>
+
+        
+      {/* Mobile menu button */}
+      <button className="mobile-menu-button" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </button>
+
       
         
-      <nav className="Navigation_item">
+      <nav className={`Navigation_item ${menuOpen ? 'open' : ''}`}>
         
         <ul>
           <li><a onClick={scrollToTop}>主页 </a></li>

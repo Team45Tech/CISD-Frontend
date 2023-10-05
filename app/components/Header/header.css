@@ -11,6 +11,7 @@
   background-color: white;
   padding: 14px 20px;
   z-index: 1000; /* 确保 header 在其他内容之上 */
+  justify-content: space-between;
 }
   
 
@@ -19,25 +20,24 @@
   .CISD_LOGO {
      /* Adjust the size as needed width: 600px;*/
     align-items: center;
-    display:flex
+    display:flex;
+    flex-wrap: nowrap; /* Prevents the items inside from wrapping to the next line */
+
   }
 
   .CISD_LOGO_word{
-    margin-left: 20px;
     width: 100px;
     
 
   }
 
   .CISD_LOGO_img{
-    margin-left: 40px; 
     width: 60px;
     cursor: pointer;
 
   }
   
   .CISD_name{
-    margin-left: 10px; 
     width: 160px;
     cursor: pointer;
 
@@ -110,3 +110,77 @@
   }
 
 
+/* Mobile menu button styles */
+.mobile-menu-button {
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+/* Styles for the dropdown menu */
+.Navigation_item.open ul {
+  display: block;
+  position: absolute;
+  top: 80px; /* height of the header */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  gap: 0;
+}
+
+.Navigation_item.open li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.Navigation_item.open a {
+  color: black;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+  .mobile-menu-button {
+    display: block; /* Show the mobile menu button */
+  }
+
+  .Navigation_item {
+    display: none; /* Hide the navigation items by default */
+  }
+
+  .Navigation_item.open {
+    display: flex; /* Show the navigation items when the menu is open */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Navigation_item {
+    display: flex; /* Show the navigation items on larger screens */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .CISD_LOGO {
+    justify-content: space-between; /* Distribute the logo elements equally */
+    width: 100%; /* Take the full width of the parent container */
+    padding: 0 10px; /* Add some padding to the sides */
+  }
+
+  .CISD_LOGO_word{
+    width: auto; /* Adjust the width to fit the content */
+    max-width: 80px; /* Set a maximum width for the images */
+  }
+  .CISD_LOGO_img {
+    width: 80%; /* Adjust the width to fit the content */
+    max-width: 80px; /* Set a maximum width for the images */
+  }
+
+  .CISD_name {
+    width: 180px; /* Set a fixed width */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+  }
+}
