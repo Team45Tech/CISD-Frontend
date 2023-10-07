@@ -21,14 +21,14 @@ export default function Footer() {
             <ul>
               <h4>联系我们</h4>
               <li><a href="#">Email: maxhaotz@gmail.com</a></li>
-              <li><a href="#">Weixin公众号:Max想吃韩国烤肉了</a></li>              
+              <li><a href="#">Weixin公众号:UACISD</a></li>              
             </ul>
           </div>
 
           <div className="footer-col">
             <h4> 关注我们</h4>
             <div className="social-links">
-              <a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="https://www.instagram.com/uacisd/"><FontAwesomeIcon icon={faInstagram} /></a>
               <a href="#"><FontAwesomeIcon icon={faWeixin} /></a>
 
             </div>
