@@ -3,12 +3,14 @@
 /* Footer container */
 .footer {
     height: 40vh;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background-color: #09184f; /* Background color for the footer */
     color: #fff; /* Text color */
+    position: relative;
   }
   
   /* Footer links */
@@ -37,14 +39,14 @@
   .logo_img {
     /* Adjust the size as needed width: 600px;*/
     align-items: center;
-    width: 40%;
+    height: 40%;
     cursor: pointer;
  }
   
 
  .copyright_container {
-  position: fixed;
-  bottom: 2%;
+  position: absolute;
+  bottom: 3%;
   right: 2%;
 }
 
