@@ -26,7 +26,7 @@ const About = () => {
         >
           <img src="/img1.jpg" alt="Image 1" className={hovered1 ? 'hidden' : ''} />
           <img src="/UofA.png" alt="Hover Image 1" className={hovered1 ? '' : 'hidden'} />
-          <div className='about_text'>剧本杀-艾德明顿冬天唯一的娱乐活动</div>
+          <div className='about_text'>Justin&Tao 图片更换内容编写 【吃喝】</div>
         </div>
 
         <div
@@ -36,7 +36,7 @@ const About = () => {
         >
           <img src="/img2.jpg" alt="Image 2" className={hovered2 ? 'hidden' : ''} />
           <img src="/UofA.png" alt="Hover Image 2" className={hovered2 ? '' : 'hidden'} />
-          <div className='about_text'>新生帮忙-我们是你最坚强的后盾</div>
+          <div className='about_text'>Justin&Tao 图片更换内容编写 【志愿】</div>
         </div>
 
         <div
@@ -46,7 +46,7 @@ const About = () => {
         >
           <img src="/img3.jpg" alt="Image 3" className={hovered3 ? 'hidden' : ''} />
           <img src="/UofA.png" alt="Hover Image 3" className={hovered3 ? '' : 'hidden'} />
-          <div className='about_text'>课程推荐-我们将带领你们走向GPA4.0</div>
+          <div className='about_text'>Justin&Tao 图片更换内容编写 【学校】</div>
         </div>
 
         <div
@@ -56,7 +56,7 @@ const About = () => {
         >
           <img src="/img4.jpg" alt="Image 4" className={hovered4 ? 'hidden' : ''} />
           <img src="/UofA.png" alt="Hover Image 4" className={hovered4 ? '' : 'hidden'} />
-          <div className='about_text'>社团实习-简历上的空白是最后遗迹</div>
+          <div className='about_text'>Justin&Tao 图片更换内容编写 【联系】</div>
         </div>
       </div>
     </div>

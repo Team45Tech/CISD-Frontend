@@ -60,21 +60,8 @@
   } */
 
 
-  /* .application_right_lower_container img:hover,
-  .application_left_lower_container img:hover{
-    border-bottom: 12px solid #FFA500;
-
-  }
-
-  .left_header:hover,
-  .right_header:hover{
-    color: #FFA500;
-  } */
-
-
-
-  .section_header{
-    font-size: 26px;
+  .left_header{
+    font-size: 24px;
     font-weight: bold;
     text-align: left;
     line-height: 2;
@@ -120,11 +107,6 @@
   
 
 
-
-  /* .left_button:hover,
-  .right_button:hover {
-    background-color: #FFA500; 
-  } */
 
 
 

@@ -1,28 +1,50 @@
 'use client'
 
 import React from 'react';
-import '../Footer/footer.css'
 import Link from 'next/link';
+import '../Footer/footers.css'
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faWeixin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
-    <footer className='footer'>
-       
-      <div className='email_container'>
-        <Link href="/">
-          <img src="/CISD_logo_sq.png" alt="CISD" className='logo_img' />
-        </Link>
-      </div>
-      {/* <div className='footer-links'>
-        <a href='contact'>Contact</a>
-        <a href='/'>Legal</a>
-      </div> */}
-      
-      <div className='copyright_container'>
-        <p>&copy; 2023 By Team56Tech.</p> 
+
+<footer className="footer">
+      <div className="container">
+        <div className="row">
+          <div className='footer-col'>
+            <Link href="/">
+              <img className='cs-img' src="CISD_logo_sq.png" alt="CISD-logo" />
+            </Link>
+          </div>
+
+          <div className="footer-col">
+            <ul>
+              <h4>联系我们</h4>
+              <li><a href="#">Email: maxhaotz@gmail.com</a></li>
+              <li><a href="#">Weixin公众号:UACISD</a></li>              
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <h4> 关注我们</h4>
+            <div className="social-links">
+              <a href="https://www.instagram.com/uacisd/"><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="#"><FontAwesomeIcon icon={faWeixin} /></a>
+
+            </div>
+          </div>
+
+          <div className='footer-col'>
+            <p className='copyright'>&copy; 2023 By Team56Tech.</p>
+          </div>
+        </div>
       </div>
     </footer>
   );
 }
+
 
 

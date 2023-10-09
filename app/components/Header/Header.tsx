@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   const scrollStudent = () =>{
-    const targetPostion = 735;
+    const targetPostion = 415;
     window.scrollTo({
       top : targetPostion,
       behavior: 'smooth'
@@ -23,7 +23,7 @@ export default function Header() {
   };
 
   const scrollAbout = () =>{
-    const targetPostion3 = 1560
+    const targetPostion3 = 1100
     window.scroll({
       top:targetPostion3,
       behavior:'smooth'
@@ -37,6 +37,14 @@ export default function Header() {
     })
   }
 
+
+  const scrollsponsor= () =>{
+    const targetPostion3 = 1800
+    window.scroll({
+      top:targetPostion3,
+      behavior:'smooth'
+    })
+  }
   return (
 
     <header className="Header_CISD">
