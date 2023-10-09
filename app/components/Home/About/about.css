@@ -9,7 +9,7 @@
     align-items: center;
   }
   
-  .application_center_container {
+  .application_header_container {
     text-align: center;
     margin-bottom: 20px;
  
@@ -30,23 +30,26 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 20px;
+    padding-inline-start: 14%;
+    padding-inline-end: 14%;
   }
   
   .application_left_lower_container,
+  .application_center_lower_container,
   .application_right_lower_container {
     flex: 1;
+    max-width: 300px;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     margin-top: 20px;
   }
-  
 
 
-  .application_left_lower_container img {
+  /* .application_left_lower_container img {
     width: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 4;
     margin-left: 300px;
   }
 
@@ -54,33 +57,41 @@
     width: 300px;
     margin-bottom: 10px;
     margin-right: 300px;
+  } */
+
+
+  /* .application_right_lower_container img:hover,
+  .application_left_lower_container img:hover{
+    border-bottom: 12px solid #FFA500;
+
   }
 
+  .left_header:hover,
+  .right_header:hover{
+    color: #FFA500;
+  } */
 
-  .left_header{
-    font-size: 24px;
+
+
+  .section_header{
+    font-size: 26px;
     font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 140px;
+    text-align: left;
+    line-height: 2;
+    margin-top: 2%;
+    writing-mode: horizontal-tb; /* 让文字以纵向方向排列 */
+    text-orientation: upright; /* 配合writing-mode，让文字正常显示 */  
   }
 
-  .right_header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left:-480px ;
+ 
+  .section_paragraph{
+    font-size: 16px;
+    line-height: 1.5;
+    writing-mode: horizontal-tb; 
+    text-orientation: upright;
   }
-  
-  .left_paragraph{
-    font-size: 14px;
-    margin-bottom: 20px;
-    margin-left: 300px;
-  }
-  .right_paragraph {
-    font-size: 14px;
-    margin-bottom: 20px;
-    margin-left: -440px;
-  }
+
+
   
   .left_button{
     padding: 10px 20px;
@@ -110,9 +121,15 @@
 
 
 
+  /* .left_button:hover,
+  .right_button:hover {
+    background-color: #FFA500; 
+  } */
+
 
 
 .application_right_lower_container img:hover,
+.application_center_lower_container img:hover,
 .application_left_lower_container img:hover,
 .left_header:hover,
 .right_header:hover,
@@ -121,4 +138,5 @@
   transform: scale(1.2); /* Example: Increase size by 20% on hover */
   transition: transform 0.3s ease; /* Add a smooth transition effect */
   background-color: #FFA500;
+  cursor: pointer;
 }

@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react';
+import Link from 'next/link';
 import '../Footer/footers.css'
 
 
@@ -14,7 +15,9 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className='footer-col'>
-            <img className='cs-img' src="CISD_logo_sq.png" alt="CISD-logo" />
+            <Link href="/">
+              <img className='cs-img' src="CISD_logo_sq.png" alt="CISD-logo" />
+            </Link>
           </div>
 
           <div className="footer-col">

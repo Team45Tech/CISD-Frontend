@@ -7,10 +7,11 @@
 
 .hero_outer_container {
     display: flex;
-    height: 60vh; /* Make it half of the screen size */
-    background-color: white; /* White background on the left */
+    height: 80vh; 
+    background-color: white; 
     align-items: center;
     margin-top: 80px;
+    
   }
   
   .hero_left_container {
@@ -193,15 +194,14 @@
   cursor: pointer;
 }
 .cir:hover {
-  background-color: #ff9900;
-  transition: 0.8s;
-
+  background-color: var(--secondary-color);
+  
 }
 .cr {
   opacity: 1;
 }
 .cr:hover {
-  background-color: #ff9900;
+  background-color: var(--secondary-color);
 }
 
 .fade {
