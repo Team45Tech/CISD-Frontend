@@ -74,6 +74,23 @@ const Hero: React.FC = () => {
           ))}
         </div>
 
+
+        {/* 左箭头按钮 */}
+        <img
+          className="change pre"
+          src="icon_pre.svg"
+          alt="Previous"
+          onClick={goToPrevSlide}
+        />
+
+        {/* 右箭头按钮 */}
+        <img
+          className="change next"
+          src="icon_next.svg"
+          alt="Next"
+          onClick={goToNextSlide}
+        />
+
         <div className="cirbox">
           {slides.map((slide, index) => (
             <div
