@@ -3,51 +3,33 @@
 /* Footer container */
 .footer {
     height: 40vh;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 4rem;
     background-color: #09184f; /* Background color for the footer */
     color: #fff; /* Text color */
+    position: relative;
   }
   
-  /* Footer links */
-  .footer a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    color: #fff; /* Text color for links */
-    margin-right: 1rem; /* Spacing between links */
+
+  /* Footer links on hover */
+  .footer a:hover {
+    background-color: #09184f; /* Background color on hover */
   }
-  
- 
   
   /* Copyright text */
   .footer p {
     font-size: 0.875rem; /* Text size */
   }
-
-  .email_container {
-    width: 20%;
-    margin-left: 15%; 
-
+  
+  .footer_second_section {
+    flex: 1;
+    padding: 20px;
   }
 
-  .logo_img {
-    /* Adjust the size as needed width: 600px;*/
-    align-items: center;
-    width: 40%;
-    cursor: pointer;
- }
-  
 
- .copyright_container {
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
-}
-
-
-
-  
+  .footer_img{
+    width: 10%;
+  }
