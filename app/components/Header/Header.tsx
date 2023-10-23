@@ -67,7 +67,7 @@ export default function Header() {
         
         <ul>
           <li><a onClick={scrollToTop}>主页 </a></li>
-          <li><a onClick={scrollStudent}>吃喝玩乐（暂定）</a></li>
+          <li><a onClick={scrollStudent}>吃喝玩乐</a></li>
           <li><a onClick={scrollAbout}>关于我们</a></li>
           {/* <li><a onClick={scrollToBottom}>活动预告</a></li> */}
           <li><a onClick={scrollToBottom}>联系我们</a></li>

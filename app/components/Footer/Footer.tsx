@@ -32,7 +32,7 @@ export default function Footer() {
             <h4> 关注我们</h4>
             <div className="social-links">
               <a href="https://www.instagram.com/uacisd/"><FontAwesomeIcon icon={faInstagram} /></a>
-              <a href="/"><FontAwesomeIcon icon={faWeixin} /></a>
+              {/* <a href="/"><FontAwesomeIcon icon={faWeixin} /></a> */}
               <a href="https://weibo.com/u/7832413825"><FontAwesomeIcon icon={faWeibo} /></a>
 
 
