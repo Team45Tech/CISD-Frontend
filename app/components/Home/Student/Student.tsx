@@ -1,7 +1,10 @@
 'use client'
 
 import React, { useState } from 'react';
-import '../About/about.css';
+
+import './student.css';
+
+
 
 const About = () => {
   const [hovered1, setHovered1] = useState(false);
@@ -21,9 +24,9 @@ const About = () => {
           onMouseEnter={() => setHovered1(true)}
           onMouseLeave={() => setHovered1(false)}
         >
-          <img src="/img1.jpg" alt="Image 1" className={hovered1 ? 'hidden' : ''} />
-          <img src="/UofA.png" alt="Hover Image 1" className={hovered1 ? '' : 'hidden'} />
-          <div className='about_text'>Justin&Tao 图片更换内容编写 【吃喝】</div>
+          <img src="/eat.jpg" alt="Image 1" className={hovered1 ? 'hidden' : ''} />
+          <img src="/c.jpg" alt="Hover Image 1" className={hovered1 ? '' : 'hidden'} />
+          <div className='about_text'></div>
         </div>
 
         <div
@@ -31,9 +34,9 @@ const About = () => {
           onMouseEnter={() => setHovered2(true)}
           onMouseLeave={() => setHovered2(false)}
         >
-          <img src="/img2.jpg" alt="Image 2" className={hovered2 ? 'hidden' : ''} />
-          <img src="/UofA.png" alt="Hover Image 2" className={hovered2 ? '' : 'hidden'} />
-          <div className='about_text'>Justin&Tao 图片更换内容编写 【志愿】</div>
+          <img src="/review.jpg" alt="Image 2" className={hovered2 ? 'hidden' : ''} />
+          <img src="/i.jpg" alt="Hover Image 2" className={hovered2 ? '' : 'hidden'} />
+          <div className='about_text'></div>
         </div>
 
         <div
@@ -41,9 +44,9 @@ const About = () => {
           onMouseEnter={() => setHovered3(true)}
           onMouseLeave={() => setHovered3(false)}
         >
-          <img src="/img3.jpg" alt="Image 3" className={hovered3 ? 'hidden' : ''} />
-          <img src="/UofA.png" alt="Hover Image 3" className={hovered3 ? '' : 'hidden'} />
-          <div className='about_text'>Justin&Tao 图片更换内容编写 【学校】</div>
+          <img src="/school.jpg" alt="Image 3" className={hovered3 ? 'hidden' : ''} />
+          <img src="/s.jpg" alt="Hover Image 3" className={hovered3 ? '' : 'hidden'} />
+          <div className='about_text'></div>
         </div>
 
         <div
@@ -51,9 +54,9 @@ const About = () => {
           onMouseEnter={() => setHovered4(true)}
           onMouseLeave={() => setHovered4(false)}
         >
-          <img src="/img4.jpg" alt="Image 4" className={hovered4 ? 'hidden' : ''} />
-          <img src="/UofA.png" alt="Hover Image 4" className={hovered4 ? '' : 'hidden'} />
-          <div className='about_text'>Justin&Tao 图片更换内容编写 【联系】</div>
+          <img src="/contact.jpg" alt="Image 4" className={hovered4 ? 'hidden' : ''} />
+          <img src="/d.jpg" alt="Hover Image 4" className={hovered4 ? '' : 'hidden'} />
+          <div className='about_text'></div>
         </div>
       </div>
     </div>

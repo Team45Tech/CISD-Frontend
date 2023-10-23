@@ -2,7 +2,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import '../Hero/hero.css'
+import './hero.css'
 
 type Slide = {
   src: string;
@@ -19,9 +19,9 @@ const Hero: React.FC = () => {
   // Array of slides with image source and alt text
   const slides = [
     { src: 'img_hero.png', alt: 'Hero image' },
-    { src: 'Event1.jpg', alt: 'Image 1' },
-    { src: 'img2.jpg', alt: 'Image 2' },
-    { src: 'img1.jpg', alt: 'Image 3' },
+    { src: 'football.jpg', alt: 'Image 1' },
+    { src: 'bask.jpg', alt: 'Image 2' },
+    { src: 'bat.jpg', alt: 'Image 3' },
   ];
 
   
@@ -73,6 +73,23 @@ const Hero: React.FC = () => {
             />
           ))}
         </div>
+
+
+        {/* 左箭头按钮 */}
+        <img
+          className="change pre"
+          src="icon_pre.svg"
+          alt="Previous"
+          onClick={goToPrevSlide}
+        />
+
+        {/* 右箭头按钮 */}
+        <img
+          className="change next"
+          src="icon_next.svg"
+          alt="Next"
+          onClick={goToNextSlide}
+        />
 
         <div className="cirbox">
           {slides.map((slide, index) => (
