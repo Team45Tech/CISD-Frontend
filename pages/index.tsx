@@ -19,7 +19,7 @@ const Page = () => {
   return (
     <div>
       <Head>
-        <title>UACISD - 中国留学生发展协会</title>
+        <title>GROUP 2 322 GROUP WORK</title>
       </Head>
       <Header/>
 

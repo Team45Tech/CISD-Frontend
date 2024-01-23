@@ -15,7 +15,7 @@ const Page = () => {
   return (
     <div>
       <Head>
-        <title>UACISD  部门介绍</title>
+        <title>322 MEMBER INTRO</title>
       </Head>
       <Header/>
       <h3>Here is member page</h3>

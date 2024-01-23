@@ -51,13 +51,13 @@ export default function Header() {
       
       <div className='CISD_LOGO'>
         <a href='/'>
-          <img src="/CISD_logo_sq.png" alt="CISD" className='CISD_LOGO_img' />
+          <img src="/" alt="CISD" className='CISD_LOGO_img' />
         </a>
         <a href='/'>
-          <img src="/CISD_logo_word.png" alt="CISD" className='CISD_LOGO_word' />
+          <img src="/" alt="CISD" className='CISD_LOGO_word' />
         </a>
         <a href='/'>
-          <img src="/CISD_name.png" alt="CISD" className='CISD_name' />
+          <img src="/" alt="CISD" className='CISD_name' />
         </a>
       </div>  
       
@@ -66,11 +66,11 @@ export default function Header() {
       <nav className="Navigation_item">
         
         <ul>
-          <li><a onClick={scrollToTop}>主页 </a></li>
-          <li><a onClick={scrollStudent}>吃喝玩乐</a></li>
-          <li><a onClick={scrollAbout}>关于我们</a></li>
+          <li><a onClick={scrollToTop}>example </a></li>
+          <li><a onClick={scrollStudent}>example</a></li>
+          <li><a onClick={scrollAbout}>example</a></li>
           {/* <li><a onClick={scrollToBottom}>活动预告</a></li> */}
-          <li><a onClick={scrollToBottom}>联系我们</a></li>
+          <li><a onClick={scrollToBottom}>example</a></li>
 
         </ul>
       </nav>

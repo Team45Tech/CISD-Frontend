@@ -14,9 +14,9 @@ const About = () => {
 
   return (
     <div className='about_outer_container'>
-      <div className='about_header'>中国留学生发展协会在UA</div>
+      <div className='about_header'>example</div>
       <div className='about_paragraph'>
-        提供给留学生更保障的大学生活和更成功的工作机会并不只是我们的目标-是我们的承诺
+      example-example
       </div>
       <div className='about_gallery'>
         <div
